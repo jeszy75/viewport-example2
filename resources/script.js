@@ -21,7 +21,7 @@ updateDevicePixelRatio();
 
 let layoutViewportSizeElement = document.getElementById("layoutViewportSize");
 const updateLayoutViewportWidth = () => {
-    layoutViewportSizeElement.innerText = `${window.innerWidth}px \u00d7 ${window.innerHeight}px`;
+    layoutViewportSizeElement.innerText = `${document.documentElement.clientWidth}px \u00d7 ${window.innerHeight}px`;
     window.addEventListener("resize", updateLayoutViewportWidth, { once: true });
 };
 updateLayoutViewportWidth();
