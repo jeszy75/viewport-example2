@@ -1,0 +1,23 @@
+@import "style.css";
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+nav, main {
+    border: thin solid;
+    flex: 1;
+}
+
+@media (min-width: 576px) {
+    #content {
+        flex-direction: row;
+    }
+    nav {
+        flex: 1;
+    }
+    main {
+        flex: 3;
+    }
+}
